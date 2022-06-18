@@ -210,7 +210,7 @@ class Commands extends Command implements PluginOwned
 				$sender->sendMessage($usage);
 			}
 		}else{
-			$sender->sendMessage(MyPlot::getPrefix() . TextFormat::RED . $plugin->getLanguage()->get("command.unknown"));
+			$sender->sendMessage(MyPlot::getPrefix() . TextFormat::RED . Server::getInstance()->getLanguage()->get("command.unknown"));
 		}
 		return true;
 	}
